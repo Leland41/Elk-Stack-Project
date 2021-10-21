@@ -95,7 +95,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-
+![alt text](https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/Docker.ps.PNG "Docker PS Image)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -126,8 +126,10 @@ SSH into the control node and follow the steps below:
 * Update the hosts file to include elk and destination IP of the elk server.
 
 * [Host-Ansible-file](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Hosts-Ansible-file)
+
 Run the playbook, and navigate to http://20.106.148.113:5601/app/kibana#/home to check that the installation worked as expected.
 
 This is what the home page should look like:
-Automated ELK Stack Deployment:
+
+
 
