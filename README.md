@@ -88,10 +88,10 @@ The playbook implements the following tasks:
 * Install docker module: This step installs any necessary docker modules necessary for the Elk docker container to run.
 * Use more memory: Configures the Elk VM to use more memory. The Elk container won’t run without this setting.
 * Download and launch a docker elk container: This step downloads the Elk docker container and starts it with the specified ports.
-.* Specified Ports:
-..* 5601:5601
-..* 9200:9200
-..* 5044:5044
+ * Specified Ports:
+  * 5601:5601
+  * 9200:9200
+  * 5044:5044
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
