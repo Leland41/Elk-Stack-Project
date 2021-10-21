@@ -66,9 +66,13 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-Local machine:174.63.123.24
+* Local machine:174.63.123.24
 
 Machines within the network can only be accessed by the Jump Box.
+
+* Jump Box Provisioner
+** Public IP: 168.62.205.122
+** Private IP: 10.0.0.4
 
 After gaining access to the Jump Box, the Elk_Season virtual machine can only be accessed through SSH (port 22) via the Docker container.
 
