@@ -137,4 +137,4 @@ This is what the home page should look like:
 
 ![alt text][logo]
 
-[logo]: https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/Part5%20of%20Elk%20Project%20Kibana.PNG "Working Kibana"
+[logo]: https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/Part5%20of%20Elk%20Project%20Kibana.PNG "Working Kibana" 
