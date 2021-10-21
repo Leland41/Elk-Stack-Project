@@ -135,6 +135,6 @@ Run the playbook, and navigate to http://20.106.148.113:5601/app/kibana#/home to
 This is what the home page should look like:
 
 
-![alt text][logo]
+![alt text][logo 2]
 
-[logo]: https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/Part5%20of%20Elk%20Project%20Kibana.PNG "Working Kibana" 
+[logo 2]: https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/Part5%20of%20Elk%20Project%20Kibana.PNG "Working Kibana" 
