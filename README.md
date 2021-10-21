@@ -1,4 +1,4 @@
-##### Automated ELK Stack Deployment:
+# Automated ELK Stack Deployment:
 
 
 
@@ -28,7 +28,7 @@ How to Use the Ansible Build
 
 
 
-##### Description of the Topology:
+# Description of the Topology:
 
 
 
@@ -58,7 +58,7 @@ The configuration details of each machine may be found below:
 
 
 
-##### Access Policies:
+# Access Policies:
 
 
 
@@ -85,7 +85,7 @@ A summary of the access policies in place can be found in the table below.
 
 
 
-##### Elk Configuration:
+# Elk Configuration:
 
 
 
@@ -139,7 +139,7 @@ Metricbeat helps monitor servers by collecting metrics from the system and servi
 
 
 
-##### Using the Playbook:
+# Using the Playbook:
 
 
 
