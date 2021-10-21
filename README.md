@@ -107,7 +107,7 @@ The playbook implements the following tasks:
     *    Use shell module
          name: Increase virtual memory on restart
          shell: echo "vm.max_map_count=262144" >> /etc/sysctl.conf
-    * [Full playbook script](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Install-elk.yml)
+    * [Full playbook script](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Install-elk.yml) "install-elk.yml"
 
 * Download and launch a docker elk container: This step downloads the Elk docker container and starts it with the specified ports.
   * Specified Ports:
