@@ -1,5 +1,6 @@
 ### Automated ELK Stack Deployment:
 
+
 The files in this repository were used to configure the network depicted below.
 
   * [Red_Team_Elk_Season_Diagram_Final.pdf](https://github.com/Leland41/Project-1-Portfolio/blob/main/Diagrams/Red_Team_Elk_Season_Diagram_Final.pdf)
@@ -27,6 +28,7 @@ How to Use the Ansible Build
 
 ### Description of the Topology:
 
+
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available and reliable, in addition to restricting access to the network.
@@ -37,13 +39,13 @@ The advantage of a jump box is that it acts as a gateway router. It creates anot
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system resources.
 
-Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elaticsearch or Logstash for indexing. 
+* Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elaticsearch or Logstash for indexing. 
 
-Metricbeat helps monitor servers by collecting metrics from the system and services running on the server
+* Metricbeat helps monitor servers by collecting metrics from the system and services running on the server
 
 The configuration details of each machine may be found below:
 
-| Name | Function | IP Address | Operating System | Size |
+## | Name | Function | IP Address | Operating System | Size |
 |---|---|---|---|---|
 | Jump Box Provisioner | Gateway | 10.0.0.4 | Linux (ubuntu 18.04) | Standard B1s (1 vcpus, 1 GiB memory) |
 | Web-1  | Virtual Machine | 10.0.0.5 | Linux (ubuntu 18.04) | Standard B1ms (1 vcpus, 2 GiB memory) |
@@ -52,6 +54,7 @@ The configuration details of each machine may be found below:
 | Elk Season Virtual Machine | Virtual Machine/Elk Stack | 10.1.0.4 | Linux (ubuntu 18.04) | Standard D2s v3 (2 vcpus, 8 GiB memory) |
 
 ### Access Policies:
+
 
 The machines on the internal network are not exposed to the public Internet. 
 
@@ -66,7 +69,7 @@ After gaining access to the Jump Box, the Elk_Season virtual machine can only be
 A summary of the access policies in place can be found in the table below.
 
 
-| Name  | Publicly Accessible | Exposed Ports | Allowed IP Addresses |
+## | Name  | Publicly Accessible | Exposed Ports | Allowed IP Addresses |
 |---|---|---|---|
 | Jump Box Provisioner  | Yes | 22,80  | Local Desktop Public IP: 174.63.123.24 |
 | Web-1 | No | 22,80 | Jump Box Provisioner Private IP: 10.0.0.4 Load Balancer Public IP: 13.87.190.223 |
@@ -76,6 +79,7 @@ A summary of the access policies in place can be found in the table below.
 
 
 ### Elk Configuration:
+
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 
@@ -120,7 +124,8 @@ Metricbeat helps monitor servers by collecting metrics from the system and servi
 
 * [Example of Metricbeat](https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/MetricBeat%20example.PNG)
 
-Using the Playbook:
+### Using the Playbook:
+
 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
@@ -130,9 +135,9 @@ SSH into the control node and follow the steps below:
 
 * [Host-Ansible-file](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Hosts-Ansible-file)
 
-Run the playbook, and navigate to http://20.106.148.113:5601/app/kibana#/home to check that the installation worked as expected.
+* Run the playbook, and navigate to http://20.106.148.113:5601/app/kibana#/home to check that the installation worked as expected.
 
-This is what the home page should look like:
+A successful session to Kibana's home page should look like:
 
 
 ![alt text][logo 2]
