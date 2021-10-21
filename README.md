@@ -4,9 +4,9 @@
 
 The files in this repository were used to configure the network depicted below.
 
-  ![alt text][logo 3]
+  ![alt text][logo]
   
-  [logo 3]: (https://github.com/Leland41/Project-1-Portfolio/blob/main/Diagrams/Red_Team_Elk_Season_Diagram_Final.pdf) "Red Team Elk Season Diagram"
+  [logo]: (https://github.com/Leland41/Project-1-Portfolio/blob/main/Diagrams/Red_Team_Elk_Season_Diagram_Final.pdf) "Red Team Elk Season Diagram"
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -114,9 +114,9 @@ The playbook implements the following tasks:
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 
-![alt text][logo]
+![alt text][logo 2]
 
-[logo]: https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/Docker.ps.PNG "Docker PS Image"
+[logo 2]: https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/Docker.ps.PNG "Docker PS Image"
 
 
 
@@ -163,6 +163,6 @@ SSH into the control node and follow the steps below:
 A successcul session looks like:
 
 
-![alt text][logo 2]
+![alt text][logo 3]
 
-[logo 2]: https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/Part5%20of%20Elk%20Project%20Kibana.PNG "Working Kibana" 
+[logo 3]: https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/Part5%20of%20Elk%20Project%20Kibana.PNG "Working Kibana" 
