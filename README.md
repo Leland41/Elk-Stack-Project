@@ -68,35 +68,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name  | Publicly Accessible | Exposed Ports | Allowed IP Addresses |
 |---|---|---|---|
-| Jump Box Provisioner  | Yes | 22,80  | Local Machine: 174.63.123.24 |
-| Web-1 | No | 22,80 | Jump Box Provisioner Private IP: 10.0.0.4
-Load Balancer Public IP: 13.87.190.223 |
-|   |   |   |   |
-|   |   |   |   |
-|   |   |   |   |
-Name
-Publicly Accessible
-Allowed IP Addresses
-Jump Box
-Yes
-Local Machine: 174.63.123.24
-Web-1
-No
-Jump Box Provisioner Private IP: 10.0.0.4
-Load Balancer Public IP: 13.87.190.223 
-Web-2
-No
-Jump Box Provisioner Private IP: 10.0.0.4
-Load Balancer Public IP: 13.87.190.223 
-Web-3
-No
-Jump Box Provisioner Private IP: 10.0.0.4
-Load Balancer Public IP: 13.87.190.223 
-Elk-Season
-No
-Jump Box Provisioner Private IP: 10.0.0.4
-Local Machine: 174.63.123.24
-
+| Jump Box Provisioner  | Yes | 22,80  | Local Desktop Public IP: 174.63.123.24 |
+| Web-1 | No | 22,80 | Jump Box Provisioner Private IP: 10.0.0.4 Load Balancer Public IP: 13.87.190.223 |
+| Web-2  | No  | 22,80  | Jump Box Provisioner Private IP: 10.0.0.4 Load Balancer Public IP: 13.87.190.223 |
+| Web-3 | No | 22,80 | Jump Box Provisioner Private IP: 10.0.0.4 Load Balancer Public IP: 13.87.190.223 |
+| Elk Season Virtual Machine | No  | 22,80,5601,9200  | Local Desktop Public IP: 174.63.123.24 Jump Box Provisioner Private IP: 10.0.0.4 |
 
 
 Elk Configuration:
