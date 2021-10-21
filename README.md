@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-  Red_Team_Elk_Season_Diagram_Final.pdf
+  * [Red_Team_Elk_Season_Diagram_Final.pdf](https://github.com/Leland41/Project-1-Portfolio/blob/main/Diagrams/Red_Team_Elk_Season_Diagram_Final.pdf)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -49,7 +49,7 @@ The configuration details of each machine may be found below:
 | Web-1  | Virtual Machine | 10.0.0.5 | Linux (ubuntu 18.04) | Standard B1ms (1 vcpus, 2 GiB memory) |
 | Web-2  | Virtual Machine | 10.0.0.6 | Linux (ubuntu 18.04) | Standard B1ms (1 vcpus, 2 GiB memory) |
 | Web-3  | Virtual Machine | 10.0.0.7 | Linux (ubuntu 18.04) | Standard B1ms (1 vcpus, 2 GiB memory) |
-| Elk-Season-VM | Virtual Machine/Elk Stack | 10.1.0.4 | Linux (ubuntu 18.04) | Standard D2s v3 (2 vcpus, 8 GiB memory) |
+| Elk Season Virtual Machine | Virtual Machine/Elk Stack | 10.1.0.4 | Linux (ubuntu 18.04) | Standard D2s v3 (2 vcpus, 8 GiB memory) |
 
 ### Access Policies:
 
@@ -88,10 +88,10 @@ The playbook implements the following tasks:
 * Install docker module: This step installs any necessary docker modules necessary for the Elk docker container to run.
 * Use more memory: Configures the Elk VM to use more memory. The Elk container won’t run without this setting.
 * Download and launch a docker elk container: This step downloads the Elk docker container and starts it with the specified ports.
- * Specified Ports:
-  * 5601:5601
-  * 9200:9200
-  * 5044:5044
+  Specified Ports:
+   5601:5601
+   9200:9200
+   5044:5044
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -103,7 +103,7 @@ This ELK server is configured to monitor the following machines:
 * Web-1 10.0.0.5
 * Web-2 10.0.0.6
 * Web-3 10.0.0.7
-* Elk-Season-Virtual Machine 10.1.0.4
+* Elk-Season-Virtual-Machine 10.1.0.4
 
 We have installed the following Filebeat and Metricbeat on these machines:
 
