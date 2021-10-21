@@ -71,8 +71,8 @@ Only the Jump Box machine can accept connections from the Internet. Access to th
 Machines within the network can only be accessed by the Jump Box.
 
 * Jump Box Provisioner
-..* Public IP: 168.62.205.122
-..* Private IP: 10.0.0.4
+  * Public IP: 168.62.205.122
+  * Private IP: 10.0.0.4
 
 After gaining access to the Jump Box, the Elk_Season virtual machine can only be accessed through SSH (port 22) via the Docker container.
 
