@@ -103,11 +103,11 @@ The playbook implements the following tasks:
 * Install python3-pip: Installs the Python 3 version of pip. Pip is a package manager tool of python that allows users to install additional packages that aren’t part of a         standard library. 
 * Install docker module: Installs any necessary docker modules necessary for the Elk docker container to operate.
 * Use more memory: Configures the Elk VM to use more memory. The Elk container's must be configured to use "vm.max_map_count=262144", due to the low memory setting from when the   machine was created.
-  * Specific configuration:
+  * Specific configuration to increase memory:
     *    Use shell module
          name: Increase virtual memory on restart
          shell: echo "vm.max_map_count=262144" >> /etc/sysctl.conf
-    * [Full playbook script](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Install-elk.yml) "install-elk.yml"
+    * [Full playbook script](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Install-elk.yml) "Install-elk.yml"
 
 * Download and launch a docker elk container: This step downloads the Elk docker container and starts it with the specified ports.
   * Specified Ports:
