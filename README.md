@@ -100,9 +100,15 @@ The main advantage of automating configurations with Ansible is to reduce config
 The playbook implements the following tasks:
 
 * Install docker.io: Installs the docker engine, used for running containers.
-* Install python3-pip: this step installs the Python 3 version of pip. Pip is a package manager tool of python that allows a user to install additional packages that aren’t part   of a standard library. 
-* Install docker module: This step installs any necessary docker modules necessary for the Elk docker container to run.
-* Use more memory: Configures the Elk VM to use more memory. The Elk container won’t run without this setting.
+* Install python3-pip: Installs the Python 3 version of pip. Pip is a package manager tool of python that allows users to install additional packages that aren’t part of a         standard library. 
+* Install docker module: Installs any necessary docker modules necessary for the Elk docker container to operate.
+* Use more memory: Configures the Elk VM to use more memory. The Elk container's must be configured to use "vm.max_map_count=262144", due to the low memory setting from when the   machine was created.
+  * Specific configuration:
+    *  # Use shell module
+         name: Increase virtual memory on restart
+         shell: echo "vm.max_map_count=262144" >> /etc/sysctl.conf
+    * [Full playbook script](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Install-elk.yml)
+
 * Download and launch a docker elk container: This step downloads the Elk docker container and starts it with the specified ports.
   * Specified Ports:
     * 5601:5601
@@ -129,11 +135,11 @@ This ELK server is configured to monitor the following machines:
 * Web-3 10.0.0.7
 * Elk-Season-Virtual-Machine 10.1.0.4
 
-We have installed the following Filebeat and Metricbeat on these machines:
+Filebeat and Metricbeat have been installed on these machines:
 
-These Beats allow us to collect the following information from each machine:
+These Beats allow users to collect the following information from each machine:
 
-Filebeat generates and organizes log files to send to Logstash and Elasticsearch. It logs information about the file system, including files, when those files have changed and timestamps of those changes. 
+Filebeat creates and organizes log files to send to Logstash and Elasticsearch. It logs information about the file system, including files, when those files have changed and timestamps of those changes. 
 
 * [Example of Filebeat](https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/filebeat%20example.PNG)
 
@@ -147,7 +153,7 @@ Metricbeat helps monitor servers by collecting metrics from the system and servi
 
 
 
-In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+In order to use the playbook, users will need to have an Ansible control node already configured. Assuming a control node has been provisioned: 
 
 SSH into the control node and follow the steps below:
 * Copy the install_elk.yml file to /etc/ansible/roles/install_elk.yml
@@ -158,7 +164,7 @@ SSH into the control node and follow the steps below:
 * Run the playbook: ansible-playbook /etc/ansible/roles/install_elk.yml
 * Navigate to http://20.106.148.113:5601/app/kibana#/home to ensure the installation is successful.
 
-A successcul session looks like:
+A successcul session using Kibana should look:
 
 
 ![alt text][logo 3]
