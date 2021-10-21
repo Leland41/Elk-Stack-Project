@@ -104,7 +104,7 @@ The playbook implements the following tasks:
 * Install docker module: Installs any necessary docker modules necessary for the Elk docker container to operate.
 * Use more memory: Configures the Elk VM to use more memory. The Elk container's must be configured to use "vm.max_map_count=262144", due to the low memory setting from when the   machine was created.
   * Specific configuration:
-    *  # Use shell module
+    *    Use shell module
          name: Increase virtual memory on restart
          shell: echo "vm.max_map_count=262144" >> /etc/sysctl.conf
     * [Full playbook script](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Install-elk.yml)
