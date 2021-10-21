@@ -66,7 +66,7 @@ The machines on the internal network are not exposed to the public Internet.
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
 
-* Local machine:174.63.123.24
+* Local machine: 174.63.123.24
 
 Machines within the network can only be accessed by the Jump Box.
 
@@ -105,9 +105,9 @@ The playbook implements the following tasks:
 * Use more memory: Configures the Elk VM to use more memory. The Elk container won’t run without this setting.
 * Download and launch a docker elk container: This step downloads the Elk docker container and starts it with the specified ports.
   * Specified Ports:
-   * 5601:5601
-   * 9200:9200
-   * 5044:5044
+    * 5601:5601
+    * 9200:9200
+    * 5044:5044
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
