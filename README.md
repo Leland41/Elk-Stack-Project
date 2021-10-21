@@ -51,48 +51,6 @@ The configuration details of each machine may be found below:
 | Web-3  | Virtual Machine | 10.0.0.7 | Linux (ubuntu 18.04) | Standard B1ms (1 vcpus, 2 GiB memory) |
 | Elk-Season-VM | Virtual Machine/Elk Stack | 10.1.0.4 | Linux (ubuntu 18.04) | Standard D2s v3 (2 vcpus, 8 GiB memory) |
 
-
-Name
-Function
-IP Address
-Operating System
-Size
-Jump Box
-Gateway 
-10.0.0.1
-Linux (ubuntu 18.04)
-
-
-Standard B1s (1 vcpus, 1 GiB memory)
-Web-1
-Virtual Machine
-10.0.0.5
-Linux (ubuntu 18.04)
-
-
-Standard B1ms (1 vcpus, 2 GiB memory)
-Web-2
-Virtual Machine
-10.0.0.6
-Linux (ubuntu 18.04)
-
-
-Standard B1ms (1 vcpus, 2 GiB memory)
-Web-3
-Virtual Machine
-10.0.0.7
-Linux (ubuntu 18.04)
-
-
-Standard B1ms (1 vcpus, 2 GiB memory)
-Elk_Season_VM
-Virtual Machine
-10.1.0.4
-Linux (ubuntu 18.04)
-Standard D2s v3 (2 vcpus, 8 GiB memory)
-
-
-
 Access Policies:
 
 The machines on the internal network are not exposed to the public Internet. 
@@ -108,6 +66,14 @@ After gaining access to the Jump Box, the Elk_Season virtual machine can only be
 A summary of the access policies in place can be found in the table below.
 
 
+| Name  | Publicly Accessible | Exposed Ports | Allowed IP Addresses |
+|---|---|---|---|
+| Jump Box Provisioner  | Yes | 22,80  | Local Machine: 174.63.123.24 |
+| Web-1 | No | 22,80 | Jump Box Provisioner Private IP: 10.0.0.4
+Load Balancer Public IP: 13.87.190.223 |
+|   |   |   |   |
+|   |   |   |   |
+|   |   |   |   |
 Name
 Publicly Accessible
 Allowed IP Addresses
