@@ -1,6 +1,7 @@
 ### Automated ELK Stack Deployment:
 
 
+
 The files in this repository were used to configure the network depicted below.
 
   * [Red_Team_Elk_Season_Diagram_Final.pdf](https://github.com/Leland41/Project-1-Portfolio/blob/main/Diagrams/Red_Team_Elk_Season_Diagram_Final.pdf)
@@ -26,7 +27,9 @@ Machines Being Monitored
 How to Use the Ansible Build
 
 
+
 ### Description of the Topology:
+
 
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
@@ -54,7 +57,9 @@ The configuration details of each machine may be found below:
 | Elk Season Virtual Machine | Virtual Machine/Elk Stack | 10.1.0.4 | Linux (ubuntu 18.04) | Standard D2s v3 (2 vcpus, 8 GiB memory) |
 
 
+
 ### Access Policies:
+
 
 
 The machines on the internal network are not exposed to the public Internet. 
@@ -79,7 +84,9 @@ A summary of the access policies in place can be found in the table below.
 | Elk Season Virtual Machine | No  | 22,80,5601,9200  | Local Desktop Public IP: 174.63.123.24 Jump Box Provisioner Private IP: 10.0.0.4 |
 
 
+
 ### Elk Configuration:
+
 
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
@@ -105,7 +112,10 @@ The following screenshot displays the result of running `docker ps` after succes
 
 [logo]: https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/Docker.ps.PNG "Docker PS Image"
 
+
+
 ### Target Machines & Beats
+
 
 
 This ELK server is configured to monitor the following machines:
@@ -128,7 +138,9 @@ Metricbeat helps monitor servers by collecting metrics from the system and servi
 * [Example of Metricbeat](https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/MetricBeat%20example.PNG)
 
 
+
 ### Using the Playbook:
+
 
 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
