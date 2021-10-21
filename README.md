@@ -45,13 +45,14 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below:
 
-## | Name | Function | IP Address | Operating System | Size |
-   |---|---|---|---|---|
+| Name | Function | IP Address | Operating System | Size |
+|---|---|---|---|---|
 | Jump Box Provisioner | Gateway | 10.0.0.4 | Linux (ubuntu 18.04) | Standard B1s (1 vcpus, 1 GiB memory) |
 | Web-1  | Virtual Machine | 10.0.0.5 | Linux (ubuntu 18.04) | Standard B1ms (1 vcpus, 2 GiB memory) |
 | Web-2  | Virtual Machine | 10.0.0.6 | Linux (ubuntu 18.04) | Standard B1ms (1 vcpus, 2 GiB memory) |
 | Web-3  | Virtual Machine | 10.0.0.7 | Linux (ubuntu 18.04) | Standard B1ms (1 vcpus, 2 GiB memory) |
 | Elk Season Virtual Machine | Virtual Machine/Elk Stack | 10.1.0.4 | Linux (ubuntu 18.04) | Standard D2s v3 (2 vcpus, 8 GiB memory) |
+
 
 ### Access Policies:
 
@@ -69,7 +70,7 @@ After gaining access to the Jump Box, the Elk_Season virtual machine can only be
 A summary of the access policies in place can be found in the table below.
 
 
-## | Name  | Publicly Accessible | Exposed Ports | Allowed IP Addresses |
+| Name  | Publicly Accessible | Exposed Ports | Allowed IP Addresses |
 |---|---|---|---|
 | Jump Box Provisioner  | Yes | 22,80  | Local Desktop Public IP: 174.63.123.24 |
 | Web-1 | No | 22,80 | Jump Box Provisioner Private IP: 10.0.0.4 Load Balancer Public IP: 13.87.190.223 |
@@ -105,6 +106,8 @@ The following screenshot displays the result of running `docker ps` after succes
 [logo]: https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/Docker.ps.PNG "Docker PS Image"
 
 ### Target Machines & Beats
+
+
 This ELK server is configured to monitor the following machines:
 
 * Web-1 10.0.0.5
@@ -123,6 +126,7 @@ Filebeat generates and organizes log files to send to Logstash and Elasticsearch
 Metricbeat helps monitor servers by collecting metrics from the system and services running on the server. 
 
 * [Example of Metricbeat](https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/MetricBeat%20example.PNG)
+
 
 ### Using the Playbook:
 
