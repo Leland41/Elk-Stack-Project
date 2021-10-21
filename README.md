@@ -9,11 +9,11 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 * [Install-elk.yml](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Install-elk.yml)
 
-[Pentest.yml (DVWA)](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Pentest.yml)
+* [Pentest.yml (DVWA)](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Pentest.yml)
 
-[Filebeat-playbook.yml](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Filebeat-playbook.yml)
+* [Filebeat-playbook.yml](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Filebeat-playbook.yml)
 
-[MetricBeat-playbook.yml](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Metricbeat-playbook.yml)
+* [MetricBeat-playbook.yml](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Metricbeat-playbook.yml)
 
 This document contains the following details:
 
@@ -83,15 +83,15 @@ The main advantage of automating configurations with Ansible is to reduce config
 
 The playbook implements the following tasks:
 
-Install docker.io: Installs the docker engine, used for running containers.
-Install python3-pip: this step installs the Python 3 version of pip. Pip is a package manager tool of python that allows a user to install additional packages that aren’t part of a standard library. 
-Install docker module: This step installs any necessary docker modules necessary for the Elk docker container to run.
-Use more memory: Configures the Elk VM to use more memory. The Elk container won’t run without this setting.
-Download and launch a docker elk container: This step downloads the Elk docker container and starts it with the specified ports.
-Specified Ports:
-5601:5601
-9200:9200
-5044:5044
+* Install docker.io: Installs the docker engine, used for running containers.
+* Install python3-pip: this step installs the Python 3 version of pip. Pip is a package manager tool of python that allows a user to install additional packages that aren’t part of a standard library. 
+* Install docker module: This step installs any necessary docker modules necessary for the Elk docker container to run.
+* Use more memory: Configures the Elk VM to use more memory. The Elk container won’t run without this setting.
+* Download and launch a docker elk container: This step downloads the Elk docker container and starts it with the specified ports.
+** Specified Ports:
+*** 5601:5601
+*** 9200:9200
+*** 5044:5044
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -100,10 +100,10 @@ The following screenshot displays the result of running `docker ps` after succes
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
-Web-1 10.0.0.5
-Web-2 10.0.0.6
-Web-3 10.0.0.7
-Elk-Season-Virtual Machine 10.1.0.4
+* Web-1 10.0.0.5
+* Web-2 10.0.0.6
+* Web-3 10.0.0.7
+* Elk-Season-Virtual Machine 10.1.0.4
 
 We have installed the following Filebeat and Metricbeat on these machines:
 
@@ -111,11 +111,11 @@ These Beats allow us to collect the following information from each machine:
 
 Filebeat generates and organizes log files to send to Logstash and Elasticsearch. It logs information about the file system, including files, when those files have changed and timestamps of those changes. 
 
-Example of Filebeat
+* Example of Filebeat
 
 Metricbeat helps monitor servers by collecting metrics from the system and services running on the server. 
 
-Example of Metricbeat
+* Example of Metricbeat
 
 Using the Playbook:
 
