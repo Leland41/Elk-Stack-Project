@@ -42,9 +42,9 @@ The advantage of a jump box is that it acts as a gateway router. It creates anot
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system resources.
 
-* Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elaticsearch or Logstash for indexing. 
+* Filebeat monitors log files or locations that users specify, collects log events, and forwards log events either to Elaticsearch or Logstash for indexing. 
 
-* Metricbeat helps monitor servers by collecting metrics from the system and services running on the server
+* Metricbeat helps monitor servers by collecting metrics from the system and services running on the server.
 
 The configuration details of each machine may be found below:
 
@@ -100,7 +100,7 @@ The main advantage of automating configurations with Ansible is to reduce config
 The playbook implements the following tasks:
 
 * Install docker.io: Installs the docker engine, used for running containers.
-* Install python3-pip: this step installs the Python 3 version of pip. Pip is a package manager tool of python that allows a user to install additional packages that aren’t part of a standard library. 
+* Install python3-pip: this step installs the Python 3 version of pip. Pip is a package manager tool of python that allows a user to install additional packages that aren’t part   of a standard library. 
 * Install docker module: This step installs any necessary docker modules necessary for the Elk docker container to run.
 * Use more memory: Configures the Elk VM to use more memory. The Elk container won’t run without this setting.
 * Download and launch a docker elk container: This step downloads the Elk docker container and starts it with the specified ports.
