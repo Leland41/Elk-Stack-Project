@@ -95,6 +95,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
+
 ![alt text][logo]
 
 [logo]: https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/Docker.ps.PNG "Docker PS Image"
@@ -134,4 +135,6 @@ Run the playbook, and navigate to http://20.106.148.113:5601/app/kibana#/home to
 This is what the home page should look like:
 
 
+![alt text][logo]
 
+[logo]: https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/Part5%20of%20Elk%20Project%20Kibana.PNG "Working Kibana"
