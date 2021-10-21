@@ -111,21 +111,21 @@ These Beats allow us to collect the following information from each machine:
 
 Filebeat generates and organizes log files to send to Logstash and Elasticsearch. It logs information about the file system, including files, when those files have changed and timestamps of those changes. 
 
-* Example of Filebeat
+* [Example of Filebeat](https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/filebeat%20example.PNG)
 
 Metricbeat helps monitor servers by collecting metrics from the system and services running on the server. 
 
-* Example of Metricbeat
+* [Example of Metricbeat](https://github.com/Leland41/Project-1-Portfolio/blob/main/Images/MetricBeat%20example.PNG)
 
 Using the Playbook:
 
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-Copy the install_elk.yml file to /etc/ansible/roles/install_elk.yml
-Update the hosts file to include elk and destination IP of the elk server.
+* Copy the install_elk.yml file to /etc/ansible/roles/install_elk.yml
+* Update the hosts file to include elk and destination IP of the elk server.
 
-Full Host-Ansible-file
+* [Host-Ansible-file](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Hosts-Ansible-file)
 Run the playbook, and navigate to http://20.106.148.113:5601/app/kibana#/home to check that the installation worked as expected.
 
 This is what the home page should look like:
