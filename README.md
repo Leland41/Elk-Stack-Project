@@ -46,7 +46,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below:
 
 ## | Name | Function | IP Address | Operating System | Size |
-|---|---|---|---|---|
+   |---|---|---|---|---|
 | Jump Box Provisioner | Gateway | 10.0.0.4 | Linux (ubuntu 18.04) | Standard B1s (1 vcpus, 1 GiB memory) |
 | Web-1  | Virtual Machine | 10.0.0.5 | Linux (ubuntu 18.04) | Standard B1ms (1 vcpus, 2 GiB memory) |
 | Web-2  | Virtual Machine | 10.0.0.6 | Linux (ubuntu 18.04) | Standard B1ms (1 vcpus, 2 GiB memory) |
