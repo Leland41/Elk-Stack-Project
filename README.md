@@ -43,11 +43,13 @@ Metricbeat helps monitor servers by collecting metrics from the system and servi
 
 The configuration details of each machine may be found below:
 
-| Name        | Function | IP Address  | Operating System | Size |
-| ------------|:-------------:| -------------:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+| Name | Function | IP Address | Operating System | Size |
+|---|---|---|---|---|
+| Jump Box Provisioner | Gateway | 10.0.0.4 | Linux (ubuntu 18.04) | Standard B1s (1 vcpus, 1 GiB memory) |
+| Web-1  | Virtual Machine | 10.0.0.5 | Linux (ubuntu 18.04) | Standard B1ms (1 vcpus, 2 GiB memory) |
+| Web-2  | Virtual Machine | 10.0.0.6 | Linux (ubuntu 18.04) | Standard B1ms (1 vcpus, 2 GiB memory) |
+| Web-3  | Virtual Machine | 10.0.0.7 | Linux (ubuntu 18.04) | Standard B1ms (1 vcpus, 2 GiB memory) |
+| Elk-Season-VM | Virtual Machine/Elk Stack | 10.1.0.4 | Linux (ubuntu 18.04) | Standard D2s v3 (2 vcpus, 8 GiB memory) |
 
 
 Name
