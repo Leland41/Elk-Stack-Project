@@ -4,7 +4,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-  ![alt logo][logo3]
+  ![alt text][logo 3]
   
   [logo 3]: (https://github.com/Leland41/Project-1-Portfolio/blob/main/Diagrams/Red_Team_Elk_Season_Diagram_Final.pdf)
 
