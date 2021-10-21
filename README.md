@@ -6,6 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
+
 [Install-elk.yml](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Install-elk.yml)
 
 [Pentest.yml (DVWA)](https://github.com/Leland41/Project-1-Portfolio/blob/main/Ansible/Pentest.yml)
@@ -41,6 +42,13 @@ Filebeat monitors the log files or locations that you specify, collects log even
 Metricbeat helps monitor servers by collecting metrics from the system and services running on the server
 
 The configuration details of each machine may be found below:
+
+| Name        | Function | IP Address  | Operating System | Size |
+| ------------|:-------------:| -------------:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 
 Name
 Function
