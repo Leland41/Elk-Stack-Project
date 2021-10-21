@@ -4,7 +4,9 @@
 
 The files in this repository were used to configure the network depicted below.
 
-  * [Red_Team_Elk_Season_Diagram_Final.pdf](https://github.com/Leland41/Project-1-Portfolio/blob/main/Diagrams/Red_Team_Elk_Season_Diagram_Final.pdf)
+  ![alt logo][logo3]
+  
+  [logo 3]: (https://github.com/Leland41/Project-1-Portfolio/blob/main/Diagrams/Red_Team_Elk_Season_Diagram_Final.pdf)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
