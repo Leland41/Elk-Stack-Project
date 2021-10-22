@@ -74,7 +74,7 @@ Machines within the network can only be accessed by the Jump Box.
   * Public IP: 168.62.205.122
   * Private IP: 10.0.0.4
 
-After gaining access to the Jump Box Provisioner, the Elk Season virtual machine can only be accessed through SSH (port 22) via the Docker container.
+After access has been gained to the Jump Box Provisioner, the Elk Season virtual machine can only be accessed through SSH (port 22) via the Docker container.
 
 A summary of the access policies in place can be found in the table below.
 
@@ -102,7 +102,7 @@ The playbook implements the following tasks:
 * Install docker.io: Installs the docker engine, used for running containers.
 * Install python3-pip: Installs the Python 3 version of pip. Pip is a package manager tool of python that allows users to install additional packages that aren’t part of a         standard library. 
 * Install docker module: Installs any necessary docker modules necessary for the Elk docker container to operate.
-* Use more memory: Configures the Elk VM to use more memory. The Elk container's must be configured to use "vm.max_map_count=262144", due to the low memory setting from when the   machine was created.
+* Use more memory: Configures the Elk Season virtual machine to use more memory. The Elk container cannot operate without increasing the memory.
   * Specific configuration to increase memory:
     *    Use shell module
          name: Increase virtual memory on restart
