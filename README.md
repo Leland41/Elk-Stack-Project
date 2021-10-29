@@ -164,7 +164,7 @@ SSH into the control node and follow the steps below:
 * Run the playbook: ansible-playbook /etc/ansible/roles/install_elk.yml
 * Navigate to http://20.106.148.113:5601/app/kibana#/home to ensure the installation is successful.
 
-A successcul session should look:
+A successful session should look:
 
 
 ![alt text][logo 3]
